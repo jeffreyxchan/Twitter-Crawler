@@ -1,0 +1,17 @@
+{
+  "name": "betmtraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "twitter": "^1.3.0",
+      "path": "latest"
+  }
+}
