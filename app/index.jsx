@@ -1,10 +1,10 @@
 var Tweet = React.createClass({
     render: function () {
         return (
-            <div class="tweet">
+            <div className="tweet">
                 <p><b>{this.props.author}:</b> {this.props.tweet}</p>
                 <p><b>Date Posted:</b> {this.props.date}</p>
-                <p><b>Likes:</b> {this.props.likes}, <b>Retweets:</b> {this.props.retweets}</p>
+                <p><b>Likes:</b> {this.props.likes} | <b>Retweets:</b> {this.props.retweets}</p>
                 <br />
             </div>
         )
@@ -22,7 +22,7 @@ var TweetList = React.createClass({
         });
         
         return(
-            <div class="tweetList">
+            <div className="tweetList">
                 {tweetNodes}
             </div>
         )
@@ -48,10 +48,10 @@ var TweetSearchForm = React.createClass({
     
     render: function () {
         return (
-            <form class="searchForm" onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="@username"value={this.state.username} 
+            <form className="searchForm" onSubmit={this.handleSubmit}>
+                <input className="inputField" type="text" placeholder="username"value={this.state.username} 
                     onChange={this.handleUsernameChange}/>
-                <input type="submit" value="Get Tweets!" />
+                <input className="button" type="submit" value="Crawl" />
             </form>
         );
     }
@@ -82,7 +82,7 @@ var TweetSearchBox = React.createClass({
     
     render: function() {
         return (
-            <div class="tweetSearchBox">
+            <div className="tweetSearchBox">
                 <h1>Twitter Crawler</h1>
                 <TweetSearchForm onSearchSubmit={this.handleSearchSubmit} />
                 <TweetList tweets={this.state.tweets} />

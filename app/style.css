@@ -1,0 +1,87 @@
+body {
+    background: url("twitter-transparent.png") fixed;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #4dc3ff;
+    text-align: center;
+}
+
+.inputField {
+    background: transparent;
+    border: 2px solid #4dc3ff;
+    border-left: 2px solid #4dc3ff;
+    
+    font-size: 36px;
+    padding: 20px;
+    width: 50%;
+    margin-left: 225px;
+    
+    transition: background 1s, border-left 1s;
+}
+
+.inputField:focus {
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+}
+
+.button {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    border: solid #4dc3ff;
+    border-radius: 5px;
+    background-color: #4dc3ff;
+    padding: 15px;
+    
+    margin-left: 40px;
+    
+    transition: background 1s, color 1s;
+}
+
+.button:hover {
+    color: #4dc3ff;
+    background-color: transparent;
+}
+
+.tweet {
+    border: solid;
+    border-radius: 5px;
+    border-color: #4dc3ff;
+    
+    margin-top: 20px;
+    margin-left: 170px;
+    width: 75%;
+    padding-left: 27px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:visited {
+    text-decoration: none;
+    background-color: transparent;
+    color: #4dc3ff;
+}
+
+a:link {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4dc3ff;
+}
+
+footer {
+    font-family: 'Montserrat';
+    color: #4dc3ff;
+    font-size: 20px; 
+    margin-top: 370px;
+    text-align: center;
+    
+    
+}
