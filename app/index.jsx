@@ -1,8 +1,9 @@
 var Tweet = React.createClass({
     render: function () {
+        var authorLink = "https://twitter.com/" + this.props.author;
         return (
             <div className="tweet">
-                <p><b>{this.props.author}:</b> {this.props.tweet}</p>
+                <p><b><a href={authorLink}>@{this.props.author}</a>:</b> {this.props.tweet}</p>
                 <p><b>Date Posted:</b> {this.props.date}</p>
                 <p><b>Likes:</b> {this.props.likes} | <b>Retweets:</b> {this.props.retweets}</p>
                 <br />
@@ -14,8 +15,9 @@ var Tweet = React.createClass({
 var TweetList = React.createClass({
     render: function () {
         var tweetNodes = this.props.tweets.map(function (tweet) {
+            console.log(tweet);
             return (
-                <Tweet author={tweet.user.name} key={tweet.id} 
+                <Tweet author={tweet.user.screen_name} key={tweet.id} 
                 tweet={tweet.text} date={tweet.created_at} likes={tweet.favorite_count} 
                 retweets={tweet.retweet_count} />
             )
