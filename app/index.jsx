@@ -1,9 +1,8 @@
 var Tweet = React.createClass({
     render: function () {
-        var authorLink = "https://twitter.com/" + this.props.author;
         return (
             <div className="tweet">
-                <p><b><a href={authorLink}>@{this.props.author}</a>:</b> {this.props.tweet}</p>
+                <p><b><a target="_blank" href={"https://twitter.com/" + this.props.author}>@{this.props.author}</a>:</b> {this.props.tweet}</p>
                 <p><b>Date Posted:</b> {this.props.date}</p>
                 <p><b>Likes:</b> {this.props.likes} | <b>Retweets:</b> {this.props.retweets}</p>
                 <br />
