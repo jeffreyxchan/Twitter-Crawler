@@ -20,9 +20,11 @@ h1 {
     font-size: 36px;
     padding: 20px;
     width: 50%;
-    margin-left: 225px;
-    
     transition: background 1s, border-left 1s;
+}
+
+form {
+    text-align: center;
 }
 
 .inputField:focus {
@@ -56,11 +58,14 @@ h1 {
     border-radius: 5px;
     border-color: #4dc3ff;
     
-    margin-top: 20px;
-    margin-left: 170px;
     width: 75%;
-    padding-left: 27px;
-    
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -80,8 +85,6 @@ footer {
     font-family: 'Montserrat';
     color: #4dc3ff;
     font-size: 20px; 
-    margin-top: 370px;
+    padding-top: 10%;
     text-align: center;
-    
-    
 }

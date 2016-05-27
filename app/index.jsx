@@ -2,10 +2,9 @@ var Tweet = React.createClass({
     render: function () {
         return (
             <div className="tweet">
-                <p><b><a target="_blank" href={"https://twitter.com/" + this.props.author}>@{this.props.author}</a>:</b> {this.props.tweet}</p>
-                <p><b>Date Posted:</b> {this.props.date}</p>
+                <p><b><a href={"https://twitter.com/" + this.props.authorScreenName}>{this.props.author}</a></b> @{this.props.authorScreenName} | {this.props.date}</p>
+                <p>{this.props.tweet}</p>
                 <p><b>Likes:</b> {this.props.likes} | <b>Retweets:</b> {this.props.retweets}</p>
-                <br />
             </div>
         )
     } 
@@ -14,10 +13,14 @@ var Tweet = React.createClass({
 var TweetList = React.createClass({
     render: function () {
         var tweetNodes = this.props.tweets.map(function (tweet) {
-            console.log(tweet);
+            var datePosted = "";
+            for (var k = 0; k < 10; k++) {
+                datePosted = datePosted + tweet.created_at[k];
+            }
+            
             return (
-                <Tweet author={tweet.user.screen_name} key={tweet.id} 
-                tweet={tweet.text} date={tweet.created_at} likes={tweet.favorite_count} 
+                <Tweet author={tweet.user.name} authorScreenName={tweet.user.screen_name} key={tweet.id} 
+                tweet={tweet.text} date={datePosted} likes={tweet.favorite_count} 
                 retweets={tweet.retweet_count} />
             )
         });
