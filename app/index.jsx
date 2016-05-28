@@ -87,7 +87,7 @@ var TweetSearchBox = React.createClass({
     render: function() {
         return (
             <div className="tweetSearchBox">
-                <h1>Twitter Crawler</h1>
+                <h1><a id="header" href="http://young-river-92178.herokuapp.com/">Twitter Crawler</a></h1>
                 <TweetSearchForm onSearchSubmit={this.handleSearchSubmit} />
                 <TweetList tweets={this.state.tweets} />
             </div>

@@ -81,6 +81,10 @@ a:link {
     color: #4dc3ff;
 }
 
+#header {
+    text-decoration: none;
+}
+
 footer {
     font-family: 'Montserrat';
     color: #4dc3ff;
