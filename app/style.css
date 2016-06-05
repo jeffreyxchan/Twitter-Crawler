@@ -27,6 +27,13 @@ form {
     text-align: center;
 }
 
+label {
+    font-family: 'Montserrate', sans-serif;
+    font-size: 36px;
+    color: #4dc3ff;
+    padding: 10px;
+}
+
 .inputField:focus {
     background: transparent;
     box-shadow: none;
@@ -51,6 +58,12 @@ form {
 .button:hover {
     color: #4dc3ff;
     background-color: transparent;
+}
+
+@media (max-width: 580px) {
+    .button {
+        display: none;
+    }
 }
 
 .tweet {

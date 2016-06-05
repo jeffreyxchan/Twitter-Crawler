@@ -53,6 +53,7 @@ var TweetSearchForm = React.createClass({
     render: function () {
         return (
             <form className="searchForm" onSubmit={this.handleSubmit}>
+                <label for="inputField">@</label>
                 <input className="inputField" type="text" placeholder="username"value={this.state.username} 
                     onChange={this.handleUsernameChange}/>
                 <input className="button" type="submit" value="Crawl" />
