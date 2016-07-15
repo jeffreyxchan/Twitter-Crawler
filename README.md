@@ -1,8 +1,7 @@
 #Twitter Crawler
-Run <code>npm install</code> to install this project's dependencies.
-<br>
+Run <code>npm install</code> to install this project's dependencies. <br>
 Then run <code>node server.js</code> to start the server.
-<br><br>
+
 Demo the app here: <a href="https://young-river-92178.herokuapp.com/" target="_blank">Twitter Crawler</a>
 
 ##Description
