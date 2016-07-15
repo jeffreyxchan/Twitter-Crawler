@@ -1,8 +1,11 @@
-#Twitter Crawler
-Run <code>npm install</code> to install this project's dependencies. <br>
-Then run <code>node server.js</code> to start the server.
+# Twitter Crawler
 
-Demo the app here: <a href="https://young-river-92178.herokuapp.com/" target="_blank">Twitter Crawler</a>
+Demo the app here: [Twitter Crawler](https://young-river-92178.herokuapp.com/ "Twitter Crawler")
 
-##Description
-A web app built with <b>Node.js</b> and <b>React.js</b> that takes in a valid Twitter username and displays the last 25 tweets of that Twitter user.
+### Description
+A web app built with **Node.js** and **React.js** that takes in a valid Twitter username and displays the last 25 tweets of that Twitter user.
+
+### Setting up the Development Environment
+Run `npm install` to install this project's dependencies.
+Run `node server` to start the server.
+Visit `localhost:8080` to view the project
