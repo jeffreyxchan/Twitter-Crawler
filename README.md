@@ -7,6 +7,6 @@ A web app built with **Node.js** and **React.js** that takes in a valid Twitter 
 
 ## Setting up the Development Environment
 
-Run `npm install` to install this project's dependencies. <br>
-Run `node server` to start the server. <br>
+Run `npm install` to install this project's dependencies.  
+Run `node server` to start the server.  
 Visit `localhost:8080` to view the project.
