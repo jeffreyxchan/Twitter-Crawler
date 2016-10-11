@@ -1,6 +1,6 @@
 # Twitter Crawler
 
-Demo the app here: [Twitter Crawler](http://young-river-92178.herokuapp.com/ "Twitter Crawler")
+Demo the app here: [Twitter Crawler](http://jeffrey-twitter-crawler.herokuapp.com/ "Twitter Crawler")
 
 ## Description
 A web app built with **Node.js** and **React.js** that takes in a valid Twitter username and uses the **Twitter API** to display the last 25 tweets of that Twitter user.
