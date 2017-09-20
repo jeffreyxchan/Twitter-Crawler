@@ -32,7 +32,7 @@ class TweetSearchBox extends React.Component {
     return (
       <div className="tweetSearchBox">
         <h1>
-          <a id="header" href="#">
+          <a id="header" href="http://jeffreyxchan.github.io/Twitter-Crawler/">
             Twitter Crawler
           </a>
         </h1>
