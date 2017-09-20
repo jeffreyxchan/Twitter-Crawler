@@ -1,107 +1,101 @@
 body {
-    background: url("twitter-transparent.png") fixed;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    color: #4dc3ff;
-    text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #4dc3ff;
+  text-align: center;
 }
 
 .inputField {
-    background: transparent;
-    border: 2px solid #4dc3ff;
-    border-left: 2px solid #4dc3ff;
-    
-    font-size: 36px;
-    padding: 20px;
-    width: 50%;
-    transition: background 1s, border-left 1s;
+  background: transparent;
+  border: 2px solid #4dc3ff;
+  border-left: 2px solid #4dc3ff;
+
+  font-size: 36px;
+  padding: 20px;
+  width: 50%;
+  transition: background-color 1s, border-left 1s;
 }
 
 form {
-    text-align: center;
+  text-align: center;
 }
 
 label {
-    font-family: 'Montserrate', sans-serif;
-    font-size: 36px;
-    color: #4dc3ff;
-    padding: 10px;
+  font-family: 'Montserrate', sans-serif;
+  font-size: 36px;
+  color: #4dc3ff;
+  padding: 10px;
 }
 
 .inputField:focus {
-    background: transparent;
-    box-shadow: none;
-    outline: none;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
 }
 
 .button {
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    
-    border: solid #4dc3ff;
-    border-radius: 5px;
-    background-color: #4dc3ff;
-    padding: 15px;
-    
-    margin-left: 40px;
-    
-    transition: background 1s, color 1s;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+  border: solid #4dc3ff;
+  border-radius: 5px;
+  background-color: #4dc3ff;
+  padding: 15px;
+
+  margin-left: 40px;
+
+  transition: background 1s, color 1s;
 }
 
 .button:hover {
-    color: #4dc3ff;
-    background-color: transparent;
+  color: #4dc3ff;
+  background-color: transparent;
 }
 
 @media (max-width: 580px) {
-    .button {
-        display: none;
-    }
+  .button {
+    display: none;
+  }
 }
 
 .tweet {
-    border: solid;
-    border-radius: 5px;
-    border-color: #4dc3ff;
-    
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+  border: solid;
+  border-radius: 5px;
+  border-color: #4dc3ff;
 
-    font-family: 'Montserrat', sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
+a:link,
 a:visited {
-    text-decoration: none;
-    background-color: transparent;
-    color: #4dc3ff;
-}
-
-a:link {
-    text-decoration: underline;
-    background-color: transparent;
-    color: #4dc3ff;
+  text-decoration: none;
+  background-color: transparent;
+  color: #4dc3ff;
 }
 
 #header {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer {
-    font-family: 'Montserrat';
-    color: #4dc3ff;
-    font-size: 20px; 
-    padding-top: 10%;
-    text-align: center;
+  font-family: 'Montserrat';
+  color: #4dc3ff;
+  font-size: 20px;
+  padding-top: 10%;
+  text-align: center;
 }

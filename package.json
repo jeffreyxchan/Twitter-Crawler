@@ -1,17 +1,40 @@
 {
-  "name": "betmtraining",
+  "name": "twitter-crawler",
   "version": "1.0.0",
-  "description": "",
+  "description": "Twitter application that displays a user's last 25 tweets.",
   "main": "server.js",
   "scripts": {
-      "start": "node server.js"
+    "build": "webpack -p",
+    "development": "webpack-dev-server",
+    "start": "node server.js"
   },
-  "author": "",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "author": "jeffreyxchan",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
-    "twitter": "^1.3.0",
-      "path": "latest"
+    "path": "latest",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "twitter": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }
